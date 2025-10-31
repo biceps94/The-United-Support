@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/..."
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ephesis&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=WindSong:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/..."
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="/css/contact.css" />
+  </head>
+  <body>
+    <!-- Section: Header -->
+    <header class="header">
+      <div class="container-header header-flex">
+        <nav class="nav-bar">
+          <!-- CSS-only toggle -->
+          <input
+            id="menu-toggle"
+            class="nav-checkbox"
+            type="checkbox"
+            aria-label="Open menu"
+          />
+          <label
+            class="menu-button-container"
+            for="menu-toggle"
+            aria-hidden="true"
+          >
+            <span class="menu-button"></span>
+          </label>
+
+          <!-- NEW: mobile/tablet logo (hidden on desktop) -->
+          <a class="logo-mobile" href="/">
+            <img src="/img/logo3.png" alt="United Support logo" />
+          </a>
+
+          <div class="empty"></div>
+
+          <ul id="primary-menu" class="main-menu">
+            <li><a class="current" href="/index.html">Home</a></li>
+            <li><a href="/index.html#about">About Us</a></li>
+            <li><a href="/index.html#services">Services</a></li>
+
+            <!-- Desktop logo -->
+            <li class="logo-item">
+              <img
+                class="main--logo"
+                src="/img/logo3.png"
+                alt="United Support logo"
+              />
+            </li>
+
+            <li><a href="/index.html#team">Team</a></li>
+            <li><a href="/index.html#reviews">Reviews</a></li>
+            <li><a href="/index.html#pricing">Pricing</a></li>
+          </ul>
+
+          <div class="quote">
+            <li>
+              <a
+                href="https://calendly.com/unitedsupport-support/customer-support-consulting"
+                >Contact Us!</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://calendly.com/unitedsupport-support/customer-support-consulting"
+                ><i class="fa-solid fa-money-check-dollar"></i
+              ></a>
+            </li>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Section: Hero -->
+    <div class="section-hero-border">
+      <div class="section-hero"></div>
+      <div class="hero">
+        <h2 id="typing-text"></h2>
+        <p>
+          For a free 30 minute consultation, book the meeting by clicking the
+          button bellow.
+        </p>
+        <a
+          href="https://calendly.com/unitedsupport-support/customer-support-consulting"
+        >
+          <button
+            class="btn"
+            href="https://calendly.com/unitedsupport-support/customer-support-consulting"
+          >
+            Book a Meeting!
+          </button>
+        </a>
+      </div>
+    </div>
+    <form
+      id="contact-form"
+      class="contact-form"
+      action="https://formspree.io/f/xovpnzld"
+      method="POST"
+      novalidate
+    >
+      <fieldset style="border: 0; padding: 0; margin: 0">
+        <legend class="sr-only">Contact United Support</legend>
+
+        <label for="contact-email">Your email</label>
+        <input
+          id="contact-email"
+          class="feedback-input"
+          type="email"
+          name="email"
+          placeholder="you@email.com"
+          autocomplete="email"
+          required
+        />
+
+        <label for="contact-message">Your message</label>
+        <textarea
+          id="contact-message"
+          class="feedback-input"
+          name="message"
+          placeholder="How can we help?"
+          rows="6"
+          required
+        ></textarea>
+
+        <!-- Optional extra fields -->
+        <input
+          type="hidden"
+          name="_subject"
+          value="Website contact — United Support"
+        />
+        <input
+          type="text"
+          name="_gotcha"
+          tabindex="-1"
+          autocomplete="off"
+          style="display: none"
+        />
+
+        <button type="submit">Send</button>
+
+        <!-- Inline status message (for JS-enhanced mode) -->
+        <p id="form-status" aria-live="polite" style="margin-top: 10px"></p>
+      </fieldset>
+    </form>
+
+    <!-- SECTION: FOOTER -->
+    <footer class="footer">
+      <div class="container footer-flex">
+        <ul class="footer-links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="#info">Services</a></li>
+          <li><a href="#info">Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <p>&copy; 2023 - 2027 United Support. <br />All rights reserved</p>
+      </div>
+    </footer>
+
+    <script>
+      // Close the menu whenever a nav link is clicked
+      document.addEventListener('click', function (e) {
+        const link = e.target.closest('#primary-menu a');
+        if (!link) return;
+
+        const toggle = document.getElementById('menu-toggle');
+        if (toggle) toggle.checked = false; // auto-close
+
+        // No preventDefault: allow normal navigation (including #about smooth scroll)
+      });
+
+      // (Optional) also close on hash navigation triggered by other code
+      window.addEventListener('hashchange', function () {
+        const toggle = document.getElementById('menu-toggle');
+        if (toggle) toggle.checked = false;
+      });
+    </script>
+
+    <script>
+      const typingElement = document.getElementById('typing-text');
+
+      const before = 'Email our office using ';
+      const email = 'support@unitedsupport.co';
+      const after =
+        " e-mail address, and we'll get back to you within 24 hours!";
+
+      let k = 0;
+      const total = before.length + email.length + after.length;
+
+      const esc = (s) =>
+        s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+      function frame() {
+        let html = '';
+
+        if (k <= before.length) {
+          html = esc(before.slice(0, k));
+        } else if (k <= before.length + email.length) {
+          const eCount = k - before.length;
+          html =
+            esc(before) +
+            "<span class='orange'>" +
+            esc(email.slice(0, eCount)) +
+            '</span>';
+        } else {
+          const aCount = k - before.length - email.length;
+          html =
+            esc(before) +
+            "<span class='orange'>" +
+            esc(email) +
+            '</span>' +
+            esc(after.slice(0, aCount));
+        }
+
+        typingElement.innerHTML = html;
+
+        if (k < total) {
+          k++;
+          setTimeout(frame, 50);
+        }
+      }
+
+      document.addEventListener('DOMContentLoaded', () => {
+        typingElement.innerHTML = '';
+        frame();
+      });
+    </script>
+  </body>
+</html>
