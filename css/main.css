@@ -2074,6 +2074,12 @@ img {
   }
 }
 
+@media (max-width: 500px) {
+  .testimonials-box.item p {
+    font-size: 15px;
+  }
+}
+
 /* Default: desktop/tablet visible */
 .review-mobile {
   display: none;
