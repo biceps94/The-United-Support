@@ -1185,6 +1185,16 @@ img {
   position: relative;
 }
 
+.info-card:hover {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.04);
+}
+
+.coverage-item:hover {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.04);
+}
+
 /* TEXT STYLING */
 .hover-card h3 {
   margin-top: 1rem;
