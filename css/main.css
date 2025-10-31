@@ -1285,6 +1285,20 @@ img {
   box-shadow: 0 6px 12px var(--primary-color, rgba(255, 162, 0, 0.25));
 }
 
+#info-head-2 i.fa-solid.fa-scale-balanced {
+  font-size: 28px; /* size */
+  color: #111; /* color */
+  line-height: 1; /* tidy vertical align */
+  margin-bottom: 0.5rem;
+}
+
+#info-head-1 i.fa-solid.fa-globe {
+  font-size: 28px; /* adjust size */
+  color: #111; /* icon color */
+  line-height: 1; /* vertical alignment */
+  margin-bottom: 0.5rem;
+}
+
 /* Also tie the bottom progress bar to the header hover/focus (not the whole card) */
 .info-card .info-head:hover ~ .expander,
 .info-card .info-head:focus-visible ~ .expander {
