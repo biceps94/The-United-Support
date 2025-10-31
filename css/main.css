@@ -613,6 +613,10 @@ img {
   color: white;
 }
 
+.section-introduction p {
+  margin: 5px 3px 5px 3px;
+}
+
 .section-introduction img {
   width: 50%;
   height: 50%;
