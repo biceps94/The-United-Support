@@ -452,7 +452,7 @@ img {
 .section-hero-border {
   margin: 0 auto;
   padding: 0.3rem;
-  width: 100vm;
+  width: 100vw;
   height: 60vh;
   border-radius: 10px;
   position: relative;
@@ -497,9 +497,12 @@ img {
   background-image: url(/img/TestBackground.png);
   background-repeat: no-repeat;
   position: relative;
-  border: 5px solid black;
+  border: 4px solid black;
   z-index: 1;
   background-size: cover;
+  overflow: hidden;
+  transform: scale(0.99);
+  left: -7px;
 }
 
 .hero {

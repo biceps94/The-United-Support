@@ -497,11 +497,13 @@ img {
   background-image: url(/img/TestBackground.png);
   background-repeat: no-repeat;
   position: relative;
-  border: 5px solid black;
+  border: 4px solid black;
   z-index: 1;
   background-size: cover;
+  overflow: hidden;
+  transform: scale(0.99);
+  left: -7px;
 }
-
 .hero {
   display: flex;
   flex-direction: column;
