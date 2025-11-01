@@ -874,6 +874,11 @@ img {
   margin-bottom: 0.5rem;
 }
 
+#info-head-1,
+#info-head-2:hover {
+  cursor: pointer;
+}
+
 /* Cards grid */
 .coverage-cards {
   display: grid;
@@ -892,6 +897,10 @@ img {
   margin-top: 2rem;
   width: 400px;
 }
+
+.coverage-card {
+  cursor: pointer;
+}
 .info-card {
   position: relative;
 }
@@ -900,7 +909,6 @@ img {
   transition: all 0.3s ease-in-out;
   transform: scale(1.04);
 }
-
 /* Headings */
 .hover-card h3 {
   margin-top: 1rem;
