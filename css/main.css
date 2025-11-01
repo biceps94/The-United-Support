@@ -1600,8 +1600,6 @@ img {
     position: relative;
     top: -80px;
   }
-  #testimonials .testimonials-box.item > img[src$='ReviewTest1.png'] {
-  }
 }
 @media (min-width: 451px) and (max-width: 550px) {
   #testimonials .testimonials-box.item > img[src$='ReviewTest1.png'],
