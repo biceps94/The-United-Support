@@ -292,7 +292,6 @@ img {
     width: 32px;
     cursor: pointer;
     z-index: 6;
-    transform: translateY(-50%);
   }
   .nav-checkbox {
     position: absolute;
@@ -896,19 +895,17 @@ img {
   text-align: center;
   margin-top: 2rem;
   width: 400px;
+  height: 110px;
 }
 
 .coverage-card {
   cursor: pointer;
 }
+
 .info-card {
   position: relative;
 }
-.info-card:hover,
-.coverage-item:hover {
-  transition: all 0.3s ease-in-out;
-  transform: scale(1.04);
-}
+
 /* Headings */
 .hover-card h3 {
   margin-top: 1rem;
@@ -951,7 +948,7 @@ img {
   text-align: center;
 }
 .moving-border {
-  padding: 2em;
+  padding: 2rem;
 }
 
 .moving-border::after,
@@ -966,8 +963,8 @@ img {
   left: 50%;
   translate: -50% -50%;
   z-index: -1;
-  padding: 3px;
-  border-radius: 10px;
+  padding: 3.5px;
+  /* border-radius: 10px; */
   animation: 3s spin linear infinite;
 }
 .moving-border::after,
@@ -1017,12 +1014,12 @@ img {
   overflow: hidden;
   max-height: 0;
   opacity: 0;
-  transform: translateY(-6px);
+  transform: translateY(0);
   transition: max-height var(--close-ms) ease, opacity 120ms ease,
     transform var(--close-ms) ease, padding 120ms ease;
   will-change: max-height, opacity, transform;
   margin: 0 auto;
-  width: 50%; /* default; overridden below */
+  width: 50%;
   background: #fff;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
   padding: 0 1rem;
@@ -1185,10 +1182,15 @@ img {
     gap: 1rem;
   }
   .coverage-card {
-    width: 100%;
     max-width: 500px;
-    margin: 1.25rem 0 0;
     padding: 0.5rem;
+  }
+
+  .moving-border::before,
+  .moving-border::after,
+  .moving-border-no-padding::before,
+  .moving-border-no-padding::after {
+    padding: 5px;
   }
 }
 
@@ -1943,4 +1945,15 @@ img {
 html,
 body {
   overflow-x: hidden;
+}
+
+html {
+  scrollbar-gutter: stable both-edges; /* modern browsers */
+}
+
+/* Fallback for older browsers */
+@supports not (scrollbar-gutter: stable) {
+  html {
+    overflow-y: scroll;
+  } /* always show the v-scrollbar */
 }
