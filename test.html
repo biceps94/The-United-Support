@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/test.css" />
+    <title>United Support</title>
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/..."
@@ -23,6 +22,9 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/..." crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
 <link rel="stylesheet" href="/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+<link rel="stylesheet" href="/css/main.css" />
+<script defer src="/_vercel/insights/script.js"></script>
+<link rel="icon" type="image/png" sizes="32x32" href="/img/logo.png" />
   </head>
   <body>
     <!-- Section: Header -->
@@ -54,7 +56,7 @@
           <ul id="primary-menu" class="main-menu">
             <li><a class="current" href="/index.html">Home</a></li>
             <li><a href="#about">About Us</a></li>
-            <li><a href="services">Services</a></li>
+            <li><a href="#services">Services</a></li>
 
             <!-- Tag your desktop logo item -->
             <li class="logo-item">
@@ -65,15 +67,15 @@
               />
             </li>
 
-            <li><a href="team">Team</a></li>
-            <li><a href="reviews">Reviews</a></li>
-            <li><a href="pricing">Pricing</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#pricing">Pricing</a></li>
           </ul>
 
           <div class="quote">
-            <li><a href="quote">Get a Quote</a></li>
+            <li><a href="/contact.html">Get a Quote</a></li>
             <li>
-              <a href="quote"><i class="fa-solid fa-money-check-dollar"></i></a>
+              <a href="/contact.html"><i class="fa-solid fa-money-check-dollar"></i></a>
             </li>
           </div>
         </nav>
@@ -131,9 +133,11 @@
 
           <div class="slider-wrapper">
             <div class="slider" aria-label="Image slider" role="region">
-              <img src="/img/Proof1.png" alt="Proof 1" />
-              <img src="img/Proof2.png" alt="Proof 2" />
-              <img src="/img/Proof3.png" alt="Proof 3" />
+              <img src="/img/PaymentIcons/BergXPerten1.png" alt="Proof 1" />
+              <img src="/img/PaymentIcons/BellaBallu2.png" alt="Proof 2" />
+              <img src="/img/PaymentIcons/Garten3.png" alt="Proof 3" />
+              <img src="/img/PaymentIcons/HikeCareUK4.png" alt="Proof 4" />
+              <img src="/img/PaymentIcons/HikeCareNL5.png" alt="Proof 5" />
             </div>
 
             <div class="slider-nav" aria-label="Slider navigation">
@@ -151,6 +155,16 @@
                 type="button"
                 data-slide="2"
                 aria-label="Go to slide 3"
+              ></button>
+              <button
+                type="button"
+                data-slide="3"
+                aria-label="Go to slide 4"
+              ></button>
+              <button
+                type="button"
+                data-slide="4"
+                aria-label="Go to slide 5"
               ></button>
             </div>
           </div>
@@ -179,7 +193,7 @@
 
        <!-- Section: Coverage -->
 
-       <section class="Coverage">
+       <section id="services" class="Coverage">
         <div class="section-coverage">
           <h1>Our Services</h1>
           <h2>What Sets Us Apart</h2>
@@ -323,7 +337,7 @@
                 id="coverage-head-b1"
               >
                 <i class="fa-solid fa-comments"></i>
-                <h3 class="uppercase">Multilingual Customer Assistance</h3>
+                <h3 class="uppercase">Cross-Language Support</h3>
                 <p class="uppercase">English, German, Dutch, Spanish & French</p>
               </button>
               <div
@@ -356,8 +370,8 @@
                 <div class="stars" aria-hidden="true">
                   <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                 </div>
-                <h3 class="uppercase">Product Review & Reputation Management</h3>
-                <p class="uppercase">Managing Reviews & Protecting Brand Image</p>
+                <h3 class="uppercase">Reputation Management</h3>
+                <p class="uppercase">Managing Reviews & Image Protection</p>
               </button>
               <div
                 class="coverage-panel"
@@ -387,7 +401,7 @@
                 id="coverage-head-b3"
               >
                 <i class="fa-solid fa-rocket"></i>
-                <h3 class="uppercase">AI-Assisted Workflow Automation</h3>
+                <h3 class="uppercase">AI-Assisted Workflow</h3>
                 <p class="uppercase">Automating Tasks for Speed & Accuracy</p>
               </button>
               <div
@@ -444,7 +458,7 @@
       
 
 <!-- Section: TheTeam -->
-<section class="section-TheTeam">
+<section id="team"class="section-TheTeam">
   <h1>The Team</h1>
   <h2>Our Company Structure</h2>
 
@@ -631,7 +645,7 @@
     <hr />
     <div class="price">
       <div class="back">
-          <a href="#" class="button">Request a Quote!</a>
+          <a href="/contact.html" class="button">Request a Quote!</a>
       </div>
   </div>
 </div>
@@ -646,12 +660,12 @@
     <hr />
     <div class="price">
       <div class="back">
-          <a href="#" class="button">Request a Quote!</a>
+          <a href="/contact.html" class="button">Request a Quote!</a>
       </div>
   </div>
 </div>
 
-<div class="pricing-option">
+<div id="pricing" class="pricing-option">
   <i class="fa-solid fa-chess-knight"></i>
     <h1>Payment Per Service</h1>
     <hr />
@@ -660,7 +674,7 @@
     <hr />
     <div class="price">
         <div class="back">
-            <a href="#" class="button">Request a Quote!</a>
+            <a href="/contact.html" class="button">Request a Quote!</a>
         </div>
     </div>
 </div>
@@ -674,8 +688,8 @@
 <div class="container footer-flex">
   <ul class="footer-links">
     <li><a href="/index.html">Home</a></li>
-    <li><a href="#info">Services</a></li>
-    <li><a href="#info">Team</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#team">Team</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
   <p>&copy; 2023 - 2027 United Support. <br>All rights reserved</p>
@@ -1075,8 +1089,11 @@ if (reviews) {
   });
 }
 </script>
-
-
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
 
   </body>
+  
 </html>
