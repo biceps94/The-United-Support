@@ -443,13 +443,11 @@ img {
 .section-hero-border {
   margin: 0 auto;
   padding: 0.3rem;
-  width: 100vw; /* fixed unit typo + unified duplicate */
+  width: 94vw;
   height: 60vh;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
-  transform: scale(0.98);
-  left: -6px;
 }
 
 /* conic border (once) */
@@ -458,7 +456,7 @@ img {
   content: '';
   position: absolute;
   height: 100%;
-  width: 100%;
+  width: 94vw;
   background-image: conic-gradient(
     from var(--angle),
     transparent 70%,
@@ -496,6 +494,7 @@ img {
   z-index: 1;
   background-size: cover;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .hero {
@@ -510,6 +509,7 @@ img {
   position: absolute;
   z-index: 2;
   inset: 0;
+  margin: 0 auto;
 }
 .section-hero::before {
   content: '';
