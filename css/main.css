@@ -443,7 +443,7 @@ img {
 .section-hero-border {
   margin: 0 auto;
   padding: 0.3rem;
-  width: 94vw;
+  width: 100vm;
   height: 60vh;
   border-radius: 10px;
   position: relative;
@@ -456,7 +456,7 @@ img {
   content: '';
   position: absolute;
   height: 100%;
-  width: 94vw;
+  width: 100%;
   background-image: conic-gradient(
     from var(--angle),
     transparent 70%,
@@ -495,6 +495,8 @@ img {
   background-size: cover;
   overflow: hidden;
   margin: 0 auto;
+  transform: scale(0.99);
+  left: -5px;
 }
 
 .hero {
