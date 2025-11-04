@@ -442,19 +442,19 @@ img {
        ========================= */
 .section-hero-border {
   margin: 0 auto;
-  padding: 0.3rem;
-  width: 100vm;
+  width: 100%;
   height: 60vh;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
 }
 
-/* conic border (once) */
+/* conic border (once)  */
 .section-hero-border::after,
 .section-hero-border::before {
   content: '';
   position: absolute;
+  inset: 0;
   height: 100%;
   width: 100%;
   background-image: conic-gradient(
@@ -496,7 +496,6 @@ img {
   overflow: hidden;
   margin: 0 auto;
   transform: scale(0.99);
-  left: -5px;
 }
 
 .hero {
@@ -510,8 +509,8 @@ img {
   color: white;
   position: absolute;
   z-index: 2;
-  inset: 0;
   margin: 0 auto;
+  inset: 0;
 }
 .section-hero::before {
   content: '';
